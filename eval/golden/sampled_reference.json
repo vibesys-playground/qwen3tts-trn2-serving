@@ -1,0 +1,137 @@
+{
+ "texts": [
+  {
+   "id": "5105_28241_000004_000001",
+   "text": "The lieutenant was well informed in many matters outside the pale of his profession, and his attainments were alike creditable to himself and to the liberal friend who had given him his education.",
+   "reference_seconds": [
+    12.4,
+    16.48
+   ]
+  },
+  {
+   "id": "5639_40744_000010_000005",
+   "text": "Real dishonour consists in sin, and real honour in virtue.",
+   "reference_seconds": [
+    5.36,
+    5.04
+   ]
+  },
+  {
+   "id": "4970_29093_000039_000000",
+   "text": "\"When do you go?\" was Philip's next question, after some moments of silence.",
+   "reference_seconds": [
+    5.28,
+    6.08
+   ]
+  },
+  {
+   "id": "2961_961_000004_000008",
+   "text": "The subject was a very noble one; he described the most famous action in which the Athenian people were ever engaged.",
+   "reference_seconds": [
+    8.08,
+    6.08
+   ]
+  },
+  {
+   "id": "121_127105_000014_000000",
+   "text": "He took no notice of her; he looked at me, but as if, instead of me, he saw what he spoke of.",
+   "reference_seconds": [
+    8.24,
+    6.48
+   ]
+  },
+  {
+   "id": "8555_284449_000041_000000",
+   "text": "\"You're right, Cap'n,\" she returned.",
+   "reference_seconds": [
+    2.4,
+    2.24
+   ]
+  },
+  {
+   "id": "4446_2275_000046_000007",
+   "text": "Then came all those years without you, lonely and hurt and discouraged; those decent young fellows and poor Mac, and me never heeding-hard as a steel spring.",
+   "reference_seconds": [
+    11.28,
+    11.76
+   ]
+  },
+  {
+   "id": "7127_75947_000023_000002",
+   "text": "The arrow pierced his heart and wounded him mortally.",
+   "reference_seconds": [
+    3.2,
+    3.12
+   ]
+  },
+  {
+   "id": "1089_134691_000045_000006",
+   "text": "But her long fair hair was girlish: and girlish, and touched with the wonder of mortal beauty, her face.",
+   "reference_seconds": [
+    10.64,
+    7.6
+   ]
+  },
+  {
+   "id": "2300_131720_000002_000003",
+   "text": "There Messrs. Johnson and Hammer put into practice many of the ideas now standard in the art, and secured much useful data for the work in New York, of which the story has just been told.",
+   "reference_seconds": [
+    11.92,
+    11.04
+   ]
+  },
+  {
+   "id": "260_123440_000023_000000",
+   "text": "'Well, perhaps not,' said Alice in a soothing tone: 'don't be angry about it.",
+   "reference_seconds": [
+    6.24,
+    6.56
+   ]
+  },
+  {
+   "id": "4970_29093_000020_000001",
+   "text": "It seemed to him that the newspaper managers didn't want genius, but mere plodding and grubbing.",
+   "reference_seconds": [
+    6.32,
+    9.92
+   ]
+  },
+  {
+   "id": "4970_29095_000009_000000",
+   "text": "\"If I must say it, mother, I want to go away, and get out of this dead level.\"",
+   "reference_seconds": [
+    6.24,
+    7.44
+   ]
+  },
+  {
+   "id": "121_127105_000010_000000",
+   "text": "I can see Douglas there before the fire, to which he had got up to present his back, looking down at his interlocutor with his hands in his pockets.",
+   "reference_seconds": [
+    12.32,
+    10.56
+   ]
+  },
+  {
+   "id": "121_127105_000017_000001",
+   "text": "You took the thing down?\"",
+   "reference_seconds": [
+    1.28,
+    1.2
+   ]
+  },
+  {
+   "id": "4970_29095_000034_000000",
+   "text": "\"Why should I? I've been again and again.",
+   "reference_seconds": [
+    5.2,
+    3.76
+   ]
+  }
+ ],
+ "audio_seconds_per_char": 0.0751491569390402,
+ "wer": 0.025684931506849314,
+ "repeats": 2,
+ "asr": "openai/whisper-small.en@e8727524f962ee844a7319d92be39ac1bd25655a",
+ "reference": "qwen-tts 0.1.1, transformers 4.57.3, torch 2.15.0+cpu, FP32 on CPU"
+}

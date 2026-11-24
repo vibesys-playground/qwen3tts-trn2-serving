@@ -1,0 +1,22 @@
+# The server image: python -m engine.server --host <host> --port <port>, run from the repository
+# root with the Trainium2 device(s) passed in (/dev/neuron0, NEURON_RT_VISIBLE_CORES).
+#
+# BASE_IMAGE must provide the AWS Neuron SDK (no weights): torch 2.14 + torch-neuronx 2.14.3,
+# neuronx-cc 2.28, NKI 0.7, Neuron runtime 2.35, transformers 5.22.1, and `uv`, with Python 3.12
+# in /opt/venv (see README.md, "Requirements"). The default tag is the name of the image the
+# results were measured with, which is not published: build or pick an equivalent Neuron SDK image
+# and pass it with --build-arg BASE_IMAGE=<image>.
+#
+# The weights are never baked in: mount the checkpoint Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
+# (revision 0c0e305) read-only and point QWEN3TTS_WEIGHTS at it (docker run -e ...), or mount it
+# at the default path below.
+ARG BASE_IMAGE=megabench-neuron:qwen38-mk
+FROM ${BASE_IMAGE}
+
+ENV PATH=/opt/venv/bin:/opt/aws/neuron/bin:$PATH \
+    PYTHONUNBUFFERED=1 \
+    QWEN3TTS_WEIGHTS=/models/Qwen3-TTS-12Hz-1.7B-CustomVoice
+
+# Serving dependencies (the base has no HTTP server library). Versions pinned.
+RUN uv pip install --no-cache --python /opt/venv/bin/python "fastapi==0.165.0" "uvicorn==0.54.0" \
+ && TORCH_DEVICE_BACKEND_AUTOLOAD=0 /opt/venv/bin/python -c "import fastapi, uvicorn, torch, transformers; print(fastapi.__version__, uvicorn.__version__, torch.__version__, transformers.__version__)"
